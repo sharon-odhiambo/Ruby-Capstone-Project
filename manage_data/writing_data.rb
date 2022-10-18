@@ -2,7 +2,6 @@ require 'json'
 require_relative '../includes'
 
 module WriteData
-
   def write_games
     File.open('./data_files/game.json', 'w') do |file|
       games_to_store = []
