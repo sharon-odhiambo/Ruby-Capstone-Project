@@ -1,0 +1,8 @@
+require_relative './classes/genre'
+require_relative './classes/source'
+require_relative './classes/author'
+require_relative './classes/item'
+require_relative './classes/label'
+require_relative './manage_data/reading_data'
+require_relative './manage_data/static_data_handle'
+require_relative './manage_data/writing_data'
