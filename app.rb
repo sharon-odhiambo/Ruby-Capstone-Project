@@ -1,13 +1,9 @@
 require 'io/console'
 
 class App
-
   include StaticDataHandle
   include ReadData
   include WriteData
-
-  def initialize
-  end
 
   def menu
     puts 'Welcome To the Catalog of things'
@@ -25,7 +21,7 @@ class App
     puts '10 - Add a game'
     puts '11 - Exit'
   end
-  
+
   def run
     choice = 0
     while choice != 11
@@ -37,7 +33,5 @@ class App
       print 'Press any key to continue....'
       $stdin.getch
     end
-    
   end
-
 end
