@@ -1,9 +1,19 @@
 require 'io/console'
+require_relative './includes'
 
 class App
   include StaticDataHandle
+  include GamesHandle
   include ReadData
   include WriteData
+
+  def initialize
+    @games = []
+    read_games
+
+    @authors = []
+    read_authors
+  end
 
   def menu
     puts 'Welcome To the Catalog of things'
@@ -15,22 +25,41 @@ class App
     puts '4 - List all genres'
     puts '5 - List all labels'
     puts '6 - List all authors'
-    puts '7 - List all sources'
-    puts '8 - Add a book'
-    puts '9 - Add a music album'
-    puts '10 - Add a game'
-    puts '11 - Exit'
+    puts '7 - Add a book'
+    puts '8 - Add a music album'
+    puts '9 - Add a game'
+    puts '10 - Exit'
+  end
+
+  def selected(choice)
+    case choice
+    when 3
+      puts
+      list_games
+    when 6
+      puts
+      list_authors
+    when 9
+      puts
+      create_game
+      write_games
+    when 10
+      puts 'Thanks For Using Our Program =(MYZ Team)='
+      exit
+    else
+      puts 'Invalid option'
+    end
   end
 
   def run
     choice = 0
-    while choice != 11
+    while choice != 10
       menu
       puts
-      print 'Please choose an option by entering a number:=> '
+      print 'Please select on option : '
       choice = gets.chomp.strip.to_i
       selected(choice)
-      print 'Press any key to continue....'
+      print 'Continue....'
       $stdin.getch
     end
   end
