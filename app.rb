@@ -25,5 +25,19 @@ class App
     puts '10 - Add a game'
     puts '11 - Exit'
   end
+  
+  def run
+    choice = 0
+    while choice != 11
+      menu
+      puts
+      print 'Please choose an option by entering a number:=> '
+      choice = gets.chomp.strip.to_i
+      selected(choice)
+      print 'Press any key to continue....'
+      $stdin.getch
+    end
+    
+  end
 
 end
