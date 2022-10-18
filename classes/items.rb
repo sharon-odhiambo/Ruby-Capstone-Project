@@ -17,7 +17,7 @@ class Item
     @archived = can_be_archived?
   end
 
-  private 
+  private
 
   def can_be_archived?
     Date.today.year - Date.parse(@publish_date).year > 10
