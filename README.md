@@ -1,12 +1,14 @@
-# School Library App
+# Management App Console
 
-This application is used to record what books are in the library and who borrows them. The app is developed by Ruby and can be used to to do the below activiteis:
+This is a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. You can add a
+The app is developed by Ruby and can be used to to do the below activiteis:
 
 <img width="323" alt="Capture" src="https://user-images.githubusercontent.com/22744775/195506577-3da1421e-2b59-4d4d-a794-26e519a13a72.PNG">
 
-- Add new students or teachers.
-- Add new books.
-- Save records of who borrowed a given book and when.
+- Add new books with their labels.
+- Add new music with their genres.
+- Add new games with their authors.
+- Save records of books, music and games and retrieve them.
 
 ## Getting Started 🙌
 
@@ -14,7 +16,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Simply clone the project: https://github.com/Hamayounali/school_library.git
+- Simply clone the project: https://github.com/sharon-odhiambo/Ruby-Capstone-Project
 
 
 👤 **Hamayoun Ali**
@@ -23,11 +25,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@hamayounAli6](https://twitter.com/hamayounAli6)
 - LinkedIn: [Humayoon Ali](https://www.linkedin.com/in/humayoon-ali-663ba2239)
 
-👤 **Collins Musoko**
+👤 **Sharon Odhiambo**
 
-- GitHub: [@Github](https://github.com/Carshy)
-- Twitter: [@Twitter](https://twitter.com/CarshyCollins)
-- Linkedin: [Linkedin](https://www.linkedin.com/in/collins-musoko-864881120/)
+- GitHub: [@sharon-odhiambo](https://github.com/sharon-odhiambo)
+- Twitter: [@SharonVictor16](https://twitter.com/sharonvictor16)
+- LinkedIn: [Sharon Odhiambo](https://www.linkedin.com/in/sharonn-odhiambo/)
 
 ## 🤝 Contributing
 
