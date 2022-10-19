@@ -57,3 +57,25 @@ create table game(
 	FOREIGN Key(source_id) REFERENCES source(id),
 	FOREIGN Key(lable_id) REFERENCES lable(id)
 );
+
+-- genre Schema
+create table genre(
+	id int primary key IDENTITY,
+	names varchar(20),
+	items varchar(256)
+)
+
+-- Book Schema
+create table Album(	
+	genre_id int,
+	author_id int,
+	source_id int,
+	lable_id int,
+	publish_date text,
+	on_spotify boolean,
+	FOREIGN Key(lable_id) REFERENCES lable(id),
+	FOREIGN Key(genre_id) REFERENCES genre(id),
+	FOREIGN Key(author_id) REFERENCES author(id),
+	FOREIGN Key(source_id) REFERENCES source(id),
+
+)
