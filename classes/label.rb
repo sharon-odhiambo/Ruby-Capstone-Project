@@ -13,5 +13,4 @@ class Label
     @items << item
     item.label = self
   end
-  
 end

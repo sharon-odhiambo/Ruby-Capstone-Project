@@ -36,13 +36,13 @@ class App
   def selected(choice)
     case choice
     when 1
-      puts 
+      puts
       @books.list_books
     when 3
       puts
       list_games
     when 5
-      puts 
+      puts
       @books.list_labels
     when 6
       puts

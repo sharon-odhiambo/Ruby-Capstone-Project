@@ -8,7 +8,7 @@ describe Book do
 
   it 'returns boolean' do
     book = Book.new('Shah', 'good')
-    newbook = book.can_be_archived?()
+    newbook = book.can_be_archived?
     expect(newbook).to eq true
   end
 end
