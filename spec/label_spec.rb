@@ -8,7 +8,7 @@ describe Label do
 
   it 'compares an Item instance and Label instance' do
     label = Label.new('Amazing', 'red')
-    item = Item.new('2020/5/11')
+    item = Item.new('Soul', 'New', 'Mike', '2020/12/25')
     newlabel = label.add_item(item)
     expect(newlabel.items[0].label).to eq label
   end
