@@ -52,7 +52,7 @@ class Handlemusic
 
     album = Music.new(on_spotify, publish_date, genrename, archived)
     newalbum = { Publisher: publish_date, On_spotify: on_spotify, genrename: genrename, archived: archived }
-    @music  << album
+    @music << album
     if File.exist?('./data/music.json')
       file = File.read('./data/music.json')
       new_list = JSON.parse(file)
