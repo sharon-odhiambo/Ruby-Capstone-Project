@@ -8,6 +8,8 @@ class App
   include WriteData
 
   def initialize
+    @books = BookHandle.new
+
     @games = []
     read_games
 
@@ -33,12 +35,21 @@ class App
 
   def selected(choice)
     case choice
+    when 1
+      puts 
+      @books.list_books
     when 3
       puts
       list_games
+    when 5
+      puts 
+      @books.list_labels
     when 6
       puts
       list_authors
+    when 7
+      puts
+      @books.add_book
     when 9
       puts
       create_game

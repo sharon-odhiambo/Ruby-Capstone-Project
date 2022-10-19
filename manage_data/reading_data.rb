@@ -3,7 +3,7 @@ require_relative '../includes'
 
 module ReadData
   def read_authors
-    File.open('./data_files/authors.json', 'r') do |file|
+    File.open('./data/authors.json', 'r') do |file|
       return if file.size.zero?
 
       authors_list = JSON.parse(file.read)
@@ -12,7 +12,7 @@ module ReadData
   end
 
   def read_games
-    File.open('./data_files/game.json', 'r') do |file|
+    File.open('./data/game.json', 'r') do |file|
       return if file.size.zero?
 
       stored_games = JSON.parse(file.read)

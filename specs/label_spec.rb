@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require_relative '../includes'
 
 describe Label do
   it 'takes one parameter and returns an Items object' do
