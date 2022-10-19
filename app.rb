@@ -20,7 +20,7 @@ class App
   def menu
     puts 'Welcome To the Catalog of things'
     puts
-    puts 'Please enter option number 1 - 11 to begin'
+    puts 'Please enter option number 1 - 10 to begin'
     puts '1 - List all books'
     puts '2 - List all music albums'
     puts '3 - List all games'
