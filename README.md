@@ -31,6 +31,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@SharonVictor16](https://twitter.com/sharonvictor16)
 - LinkedIn: [Sharon Odhiambo](https://www.linkedin.com/in/sharonn-odhiambo/)
 
+👤 **Nicholas Maina**
+
+- GitHub: [@businesskaniki](https://github.com/businesskaniki)
+- Twitter: [@nicholasmaina](https://twitter.com/nicholasmaina)
+- LinkedIn: [nicholasmaina](https://www.linkedin.com/in/Nicholas-Maina/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
