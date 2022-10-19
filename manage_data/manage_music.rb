@@ -14,9 +14,9 @@ class Handlemusic
     if @music.length.positive?
       @music.each_with_index do |song, index|
         puts "[#{index + 1}]"
-        puts "Publisher: #{song.Publisher}"
-        puts "Cover State: #{song.On_spotify}"
-        puts "Publish Date: #{song.archived}"
+        puts "Publish_date: #{song.Publisher}"
+        puts "on spotify: #{song.On_spotify}"
+        puts "archived: #{song.archived}"
         puts
       end
     else
