@@ -4,8 +4,9 @@ require 'date'
 class Game < Item
   attr_accessor :name, :multi_player, :last_played_at
 
-  def initialize(name, genre, author, label, publish_date, multi_player, last_played_at)
+  def initialize(name, publish_date, multi_player, last_played_at)
     super(genre, author, label, publish_date)
+    @id = rand(1..1000)
     @name = name
     @multi_player = multi_player
     @last_played_at = last_played_at

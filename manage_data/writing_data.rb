@@ -7,9 +7,6 @@ module WriteData
       games_to_store = []
       @games.each do |game|
         games_to_store << { name: game.name,
-                            genre: game.genre,
-                            author: game.author,
-                            label: game.label,
                             publish_date: game.publish_date,
                             multi_player: game.multi_player,
                             last_played_at: game.last_played_at }

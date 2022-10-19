@@ -3,15 +3,14 @@ require_relative '../includes'
 module GamesHandle
   def list_games
     if @games.empty?
-      puts 'The game list is empty. Create new Game Item!'
+      puts 'The game list is empty!'
     else
       @games.each_with_index do |game, index|
         puts "[#{index + 1}]"
         puts "Name: #{game.name}"
-        puts "Label: #{game.label}"
-        puts "Authored by: #{game.author}"
+        puts "Multi Player: #{game.multi_player}"
         puts "Publish Date: #{game.publish_date}"
-        puts "Genre: #{game.genre}"
+        puts "Last Played Date: #{game.last_played_at}"
         puts
       end
     end
@@ -19,18 +18,8 @@ module GamesHandle
 
   def create_game
     puts
-
-    print 'Label: '
-    label = gets.chomp.strip.capitalize
-
-    print 'Genre: '
-    genre = gets.chomp.strip.capitalize
-
     print 'Name: '
     name = gets.chomp.strip.capitalize
-
-    print 'Author: '
-    author = gets.chomp.strip.capitalize
 
     print 'Publish Date [YYYY-MM-DD]: '
     publish_date = gets.chomp.strip.capitalize
@@ -42,7 +31,7 @@ module GamesHandle
     print 'Last Played At [YYYY/MM/DD]: '
     last_played_at = gets.chomp.strip
 
-    @games.push(Game.new(name, genre, author, label, publish_date, multi_player, last_played_at))
+    @games.push(Game.new(name, publish_date, multi_player, last_played_at))
     puts 'Game Created Successfully!'
   end
 end

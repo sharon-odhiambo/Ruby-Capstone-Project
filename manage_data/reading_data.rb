@@ -19,9 +19,6 @@ module ReadData
       stored_games.each do |game|
         @games << Game.new(
           game['name'],
-          game['genre'],
-          game['author'],
-          game['label'],
           game['publish_date'],
           game['multi_player'],
           game['last_played_at']
