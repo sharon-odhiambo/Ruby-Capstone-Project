@@ -10,6 +10,8 @@ class App
   def initialize
     @books = BookHandle.new
 
+    @music = Handlemusic.new
+
     @games = []
     read_games
 
@@ -38,9 +40,15 @@ class App
     when 1
       puts
       @books.list_books
+    when 2
+      puts
+      @music.list_music
     when 3
       puts
       list_games
+    when 4
+      puts
+      @music.list_genre
     when 5
       puts
       @books.list_labels
@@ -50,6 +58,9 @@ class App
     when 7
       puts
       @books.add_book
+    when 8
+      puts
+      @music.add_album
     when 9
       puts
       create_game
