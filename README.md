@@ -11,7 +11,7 @@ The app is developed by Ruby and can be used to to do the below activiteis:
 - Add new games with their authors.
 - Save records of books, music and games and retrieve them.
 
-You can find the a short video of project description here. [Video Presentation] (https://drive.google.com/file/d/1Xs1vqPR19pGuFQLU1tmuP0P94eJ4i4EV/view?usp=sharing)
+You can find the a short video of project description here. [Video Presentation](https://drive.google.com/file/d/1Xs1vqPR19pGuFQLU1tmuP0P94eJ4i4EV/view?usp=sharing)
 
 ## Getting Started 🙌
 
