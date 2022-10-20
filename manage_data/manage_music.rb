@@ -14,8 +14,7 @@ class Handlemusic
     if @music.length.positive?
       @music.each_with_index do |song, index|
         puts "[#{index + 1}]"
-        puts "Publish_date: #{song.Publisher}"
-        puts "on spotify: #{song.On_spotify}"
+        puts "on spotify: #{song.on_spotify}"
         puts "archived: #{song.archived}"
         puts
       end
@@ -29,7 +28,7 @@ class Handlemusic
       puts 'There are no genres yet'
     else
       @music.each_with_index do |genre, index|
-        puts "#{index + 1}.genreName: #{genre.genrename}"
+        puts "#{index + 1}.genreName: #{genre.genre}"
       end
     end
   end
@@ -45,13 +44,13 @@ class Handlemusic
 
     print 'Kindly enter genre:'
     print 'name: '
-    genrename = gets.chomp.strip.capitalize
+    genre = gets.chomp.strip.capitalize
 
     print 'archived: '
     archived = gets.chomp.strip.capitalize
 
-    album = Music.new(on_spotify, publish_date, genrename, archived)
-    newalbum = { Publisher: publish_date, On_spotify: on_spotify, genrename: genrename, archived: archived }
+    album = Music.new(on_spotify, publish_date, genre, archived)
+    newalbum = { on_spotify: on_spotify,publish_date: publish_date, genre: genre, archived: archived }
     @music << album
     if File.exist?('./data/music.json')
       file = File.read('./data/music.json')

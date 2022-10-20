@@ -1,8 +1,20 @@
 [
   {
-    "Publisher": "2022/2/2",
-    "On_spotify": "Test",
-    "genrename": "Test",
-    "archived": "Y"
+    "Publisher": "2021/5/11",
+    "on_spotify": "Yes",
+    "genre": "Soul",
+    "archived": "Yes"
+  },
+  {
+    "Publisher": "2020/2/2",
+    "on_spotify": "Yes",
+    "genre": "Hiphop",
+    "archived": "Yes"
+  },
+  {
+    "on_spotify": "Yes",
+    "publish_date": "2019/2/2",
+    "genre": "Oldies",
+    "archived": "Yes"
   }
 ]
