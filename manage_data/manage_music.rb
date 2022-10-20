@@ -50,7 +50,7 @@ class Handlemusic
     archived = gets.chomp.strip.capitalize
 
     album = Music.new(on_spotify, publish_date, genre, archived)
-    newalbum = { on_spotify: on_spotify,publish_date: publish_date, genre: genre, archived: archived }
+    newalbum = { on_spotify: on_spotify, publish_date: publish_date, genre: genre, archived: archived }
     @music << album
     if File.exist?('./data/music.json')
       file = File.read('./data/music.json')
