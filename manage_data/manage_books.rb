@@ -45,10 +45,9 @@ class BookHandle
   def list_books
     if @books.length.positive?
       @books.each_with_index do |book, index|
-        puts book
         puts "[#{index + 1}]"
         puts "Publisher: #{book.publisher}"
-        puts "Cover State: #{book.genre}"
+        puts "Cover State: #{book.cover_state}"
         puts "Publish Date: #{book.publish_date}"
         puts
       end
