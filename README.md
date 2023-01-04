@@ -1,6 +1,6 @@
 # Management App Console
 
-This is a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. You can add a
+This is a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. You can add a new book, music and games as well as save and retrieve both records.
 The app is developed by Ruby and can be used to to do the below activiteis:
 
 <img width="369" alt="Capture" src="https://user-images.githubusercontent.com/22744775/196893179-205c871c-d9fc-421b-b0d2-1de4846ca50f.PNG">
